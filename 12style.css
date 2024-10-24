@@ -1,0 +1,40 @@
+
+.link {
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .link[data-state="default"] {
+    color: #3498db;
+  }
+  
+  .link[data-state="hover"] {
+    color: #f1c40f;
+  }
+  
+  .link[data-state="focus"] {
+    outline: none;
+    box-shadow: 0 0 0 2px #3498db;
+  }
+  
+  .link[data-state="active"] {
+    color: #e74c3c;
+  }
+  
+  .link[data-state="visited"] {
+    color: #95a5a6;
+  }
+  
+  /* Custom styles for toggle button */
+  #toggle-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  #toggle-btn:hover {
+    background-color: #3e8e41;
+  }
+  

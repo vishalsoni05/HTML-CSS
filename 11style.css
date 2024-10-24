@@ -1,0 +1,40 @@
+
+/* Link formatting */
+
+a {
+    text-decoration: none; /* Remove default underline */
+    color: #3498db; /* Default link color */
+  }
+  
+  a:hover {
+    color: #f1c40f; /* Hover color */
+    transition: color 0.2s ease-in-out; /* Smooth transition */
+  }
+  
+  a:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 2px #3498db; /* Custom focus outline */
+  }
+  
+  a:active {
+    color: #e74c3c; /* Active/Clicked color */
+  }
+  
+  a:visited {
+    color: #95a5a6; /* Visited link color */
+  }
+  
+  /* Additional styles for link  */
+  
+  a:hover::after {
+    content: " (" attr(href) ")"; /* Show link URL on hover */
+    font-size: 14px;
+    color: #666;
+  }
+  
+  a:focus::before {
+    content: " "; /* Add bullet point before focused link */
+    font-size: 18px;
+    color: #3498db;
+  }
+  
